@@ -6,7 +6,7 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paragraphOne: `Hello fellas! My name is Muhammad Farhan. I'm an android app developmer as well as full stack web developer who is
+  paragraphOne: `Hello fellas! My name is Muhammad Farhan. I'm an android app developer as well as full stack web developer who is
     passionate about various technologies. I like to experiment with different web
     technologies. I have an experience of 2 yaears building android app as well as web app 😅.`,
   paragraphTwo: `Currently I work mostly in android app development using Kotlin and web development using Laravel framework and JavaScript (Node JS, React, Gatsby, etc). 
