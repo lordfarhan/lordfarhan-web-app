@@ -10,10 +10,10 @@ module.exports = {
   pages: {
     home: '/',
     contact: 'contact',
-    blog: 'blog',
     projects: 'projects',
+    tags: 'tags',
+    posts: 'posts',
     resume: 'resume',
-    tag: 'tags',
   },
   social: {
     linkedin: 'https://linkedin.com/in/lordfarhan',
@@ -26,9 +26,34 @@ module.exports = {
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/5ca53825-3ea3-45fe-8e0a-2bc11c5202d3',
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
   tags: {
+    kotlin: {
+      name: 'Kotlin',
+      description: 'A cross-platform, statically typed, general-purpose programming language with type inference.',
+      color: '#1AA2D4',
+    },
+    java: {
+      name: 'Java',
+      description: 'Java is a high-level, class-based, object-oriented programming language.',
+      color: '#D0A384',
+    },
+    firebase: {
+      name: 'Firebase',
+      description: 'Firebase is a platform developed by Google for creating mobile and web applications.',
+      color: '#FFA611',
+    },
+    php: {
+      name: 'PHP',
+      description: 'A general-purpose scripting language that is especially suited to web development.',
+      color: '#474A8A',
+    },
+    laravel: {
+      name: 'Laravel',
+      description: 'Laravel is a web application framework with expressive, elegant syntax based on PHP.',
+      color: '#F05340',
+    },
     javascript: {
       name: 'javascript',
-      description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.',
+      description: 'JavaScript is an object-oriented programming language used to give functionality to web pages.',
       color: '#f0da50',
     },
     nodejs: {
@@ -61,11 +86,5 @@ module.exports = {
       description: 'CSS is used to style the HTML element and to give a very fancy look for the web application.',
       color: '#43ace0',
     },
-    python: {
-      name: 'python',
-      description: 'A general purpose programming language that is widely used for developing various applications.',
-      color: '#f9c646',
-    },
-
   },
 };

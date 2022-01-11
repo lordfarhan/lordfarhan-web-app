@@ -26,31 +26,31 @@ exports.createPages = ({ actions, graphql }) => {
 
     const { allMarkdownRemark } = result.data;
 
-    /* Post pages */
+    /* Project pages */
     allMarkdownRemark.edges.forEach(({ node }) => {
-      // Check path prefix of post
-      if (node.frontmatter.path.indexOf(config.pages.blog) !== 0) {
+      // Check path prefix of project
+      if (node.frontmatter.path.indexOf(config.pages.projects) !== 0) {
         // eslint-disable-next-line no-throw-literal
         throw `Invalid path prefix: ${node.frontmatter.path}`;
       }
 
       createPage({
         path: node.frontmatter.path,
-        component: path.resolve('src/templates/post/post.jsx'),
+        component: path.resolve('src/templates/project/project.jsx'),
         context: {
-          postPath: node.frontmatter.path,
+          projectPath: node.frontmatter.path,
           translations: utils.getRelatedTranslations(node, allMarkdownRemark.edges),
         },
       });
     });
     const regexForIndex = /index\.md$/;
-    // Posts in default language, excluded the translated versions
-    const defaultPosts = allMarkdownRemark.edges
+    // Projects in default language, excluded the translated versions
+    const defaultProjects = allMarkdownRemark.edges
       .filter(({ node: { fileAbsolutePath } }) => fileAbsolutePath.match(regexForIndex));
 
     /* Tag pages */
     const allTags = [];
-    defaultPosts.forEach(({ node }) => {
+    defaultProjects.forEach(({ node }) => {
       node.frontmatter.tags.forEach((tag) => {
         if (allTags.indexOf(tag) === -1) allTags.push(tag);
       });

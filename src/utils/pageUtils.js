@@ -8,11 +8,14 @@ const Utils = {
    * @return {string} Resolved url without trailing slash.
    */
   resolveUrl: (...paths) => paths.reduce((resolvedUrl, path) => {
+    if (path === undefined) {
+      return '';
+    }
     const urlPath = path.toString().trim();
     if (urlPath) {
       // eslint-disable-next-line no-param-reassign
       resolvedUrl
-          += (resolvedUrl === '' ? '' : '/') + urlPath.replace(/^\/|\/$/g, '');
+        += (resolvedUrl === '' ? '' : '/') + urlPath.replace(/^\/|\/$/g, '');
     }
 
     resolvedUrl = resolvedUrl[0] !== '/' ? `/${resolvedUrl}` : resolvedUrl;
@@ -29,44 +32,45 @@ const Utils = {
     return resolvedUrl;
   },
   /**
-   * Get an ordered list of suggested posts for a single post.
-   * @param {Object} post The single post of which to find the related posts.
+   * Get an ordered list of suggested projects for a single project.
+   * @param {Object} project The single project of which to find the related projects.
    * It's the returned object from Graphql's query `markdownRemark`
-   * @param {Array} postList The list where find related posts. It's the returned
+   * @param {Array} projectList The list where find related projects. It's the returned
    * object from Graphql's query `allMarkdownRemark`
-   * @param {number} limit The maximum number of suggested posts to get
-   * @return {Array} The `postList` object sorted according to the best match with the `post` object
+   * @param {number} limit The maximum number of suggested projects to get
+   * @return {Array} The `projectList` object sorted according to the best match
+   * with the `project` object
    */
-  getSuggestedPosts: (post, postList, limit) => {
-    // Get the number of common tags with provided post.
+  getSuggestedProjects: (project, projectList, limit) => {
+    // Get the number of common tags with provided project.
     const getTagScore = (edge) => {
       let commonTags = 0;
       edge.node.frontmatter.tags.forEach((tag) => {
-        commonTags += post.frontmatter.tags.indexOf(tag) !== -1 ? 1 : 0;
+        commonTags += project.frontmatter.tags.indexOf(tag) !== -1 ? 1 : 0;
       });
       return commonTags;
     };
 
-    return postList.edges
+    return projectList.edges
       .sort((edgeA, edgeB) => getTagScore(edgeB) - getTagScore(edgeA))
       .slice(0, limit);
   },
   /**
-   * Pass a post and retrieve a list of related translations.
-   * @param {Object} post The post of which retrieve its translations.
+   * Pass a project and retrieve a list of related translations.
+   * @param {Object} project The project of which retrieve its translations.
    * It accepts a `node` object from Graphql's query `allMarkdownRemark`
-   * @param {Object} postList The list of posts where search translations.
+   * @param {Object} projectList The list of projects where search translations.
    * It accepts a `edges` array from Graphql's query `allMarkdownRemark`
    * @return {Object} An array of objects with languages as keys (ISO 639-1) and
-   * translated post's paths as values.
+   * translated project's paths as values.
    */
-  getRelatedTranslations: (post, postList) => postList
+  getRelatedTranslations: (project, projectList) => projectList
     .filter(({ node }) =>
-    // Get posts in the same folder of provided post
-      // eslint-disable-next-line implicit-arrow-linebreak
+    // Get projects in the same folder of provided project
+    // eslint-disable-next-line implicit-arrow-linebreak
       (
         node.fileAbsolutePath.split('/').slice(-2, -1)[0]
-          === post.fileAbsolutePath.split('/').slice(-2, -1)[0]
+      === project.fileAbsolutePath.split('/').slice(-2, -1)[0]
       ))
     .map(({ node }) => {
       const lang = node.fileAbsolutePath.split('.').slice(-2, -1)[0];
