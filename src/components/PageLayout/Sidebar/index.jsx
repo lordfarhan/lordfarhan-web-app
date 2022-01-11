@@ -57,6 +57,16 @@ const DomContent = () => (
         </li>
         <li className={`${style.contactBlockItem}`}>
           <span className={style.iconProfile}>
+            <FeatherIcon size="18" icon="phone" />
+            {' '}
+          </span>
+          &nbsp; &nbsp;
+          <a className={style.emailAnchor} href="mailto:farhan1205muhammad@gmail.com" target="_top">
+            <span>+6289604195823</span>
+          </a>
+        </li>
+        <li className={`${style.contactBlockItem}`}>
+          <span className={style.iconProfile}>
             <FeatherIcon size="18" icon="mail" />
             {' '}
           </span>
@@ -66,7 +76,7 @@ const DomContent = () => (
           </a>
         </li>
       </ul>
-      <div className={style.resumeDownload}>
+      <div className={style.actionButton}>
         {/* <a href="../cv.pdf" download target="_blank">Download CV</a> */}
         <a href="/contact">Contact ME</a>
       </div>
