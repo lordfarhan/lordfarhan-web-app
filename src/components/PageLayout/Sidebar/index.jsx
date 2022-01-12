@@ -51,9 +51,9 @@ const DomContent = () => (
             {' '}
           </span>
           &nbsp; &nbsp;
-          <span>
-            Bojonegoro, Indonesia
-          </span>
+          <a className={style.anchorProfile} href="https://goo.gl/maps/oaz2yc5ryognzjqY7" target="_blank" rel="noreferrer">
+            <span>Bojonegoro, Indonesia</span>
+          </a>
         </li>
         <li className={`${style.contactBlockItem}`}>
           <span className={style.iconProfile}>
@@ -61,7 +61,7 @@ const DomContent = () => (
             {' '}
           </span>
           &nbsp; &nbsp;
-          <a className={style.emailAnchor} href="mailto:farhan1205muhammad@gmail.com" target="_top">
+          <a className={style.anchorProfile} href="tel:6289604195823" target="_top">
             <span>+6289604195823</span>
           </a>
         </li>
@@ -71,7 +71,7 @@ const DomContent = () => (
             {' '}
           </span>
           &nbsp; &nbsp;
-          <a className={style.emailAnchor} href="mailto:farhan1205muhammad@gmail.com" target="_top">
+          <a className={style.anchorProfile} href="mailto:farhan1205muhammad@gmail.com" target="_top">
             <span className={style.emailHider}>@</span>
           </a>
         </li>
