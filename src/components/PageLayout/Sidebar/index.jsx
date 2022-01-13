@@ -61,8 +61,8 @@ const DomContent = () => (
             {' '}
           </span>
           &nbsp; &nbsp;
-          <a className={style.anchorProfile} href="tel:6289604195823" target="_top">
-            <span>+6289604195823</span>
+          <a className={style.anchorProfile} href="tel:+6289604195823" target="_top">
+            <span>+62 896-0419-5823</span>
           </a>
         </li>
         <li className={`${style.contactBlockItem}`}>
