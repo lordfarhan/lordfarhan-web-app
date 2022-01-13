@@ -16,7 +16,7 @@ import style from './project.module.less';
 const Project = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
   const {
-    title, cover: { childImageSharp: { fluid } }, excerpt, path,
+    title, cover: { childImageSharp: { fluid } }, excerpt, path, tags,
   } = frontmatter;
 
   const canonicalUrl = Utils.resolvePageUrl(
@@ -31,7 +31,7 @@ const Project = ({ data }) => {
           title={title}
           description={excerpt}
           path={path}
-          keywords={['FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+          keywords={tags}
         />
         <Header />
         <SidebarWrapper>
@@ -41,6 +41,15 @@ const Project = ({ data }) => {
               <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
             </div>
             <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
+            {
+              tags.map((val) => (
+                <div className={style.tagHolder}>
+                  {
+                    `#${val}`
+                  }
+                </div>
+              ))
+            }
             <Comment pageCanonicalUrl={canonicalUrl} pageId={title} />
           </div>
         </SidebarWrapper>

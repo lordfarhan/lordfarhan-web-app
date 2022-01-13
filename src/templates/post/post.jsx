@@ -16,7 +16,7 @@ import style from './post.module.less';
 const Post = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
   const {
-    title, cover: { childImageSharp: { fluid } }, excerpt, path,
+    title, cover: { childImageSharp: { fluid } }, excerpt, path, tags,
   } = frontmatter;
 
   const canonicalUrl = Utils.resolvePageUrl(
@@ -31,7 +31,7 @@ const Post = ({ data }) => {
           title={title}
           description={excerpt}
           path={path}
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+          keywords={tags}
         />
         <Header />
         <SidebarWrapper>

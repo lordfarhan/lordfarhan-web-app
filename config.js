@@ -26,6 +26,11 @@ module.exports = {
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/5ca53825-3ea3-45fe-8e0a-2bc11c5202d3',
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
   tags: {
+    android: {
+      name: 'Android Development',
+      description: 'Design, build, and maintain mobile application based on Android operating system',
+      color: '#a4c639',
+    },
     kotlin: {
       name: 'Kotlin',
       description: 'A cross-platform, statically typed, general-purpose programming language with type inference.',

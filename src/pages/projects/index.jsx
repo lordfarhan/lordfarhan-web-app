@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import { Layout, Row, Col } from 'antd';
 import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
-import PostCard from '../../components/PostCard';
+import ProjectCard from '../../components/ProjectCard';
 import SEO from '../../components/Seo';
 
 const Projects = ({ data }) => (
@@ -13,19 +13,25 @@ const Projects = ({ data }) => (
       <Header />
       <SEO
         title="Projects"
-        description="I use my time for developing my skill by creating some project. A lot of project based on Android as well as web app using Gatsby I have developed."
+        description="I use my time for developing my skill by creating some project, some of my projects are for commercial, and some are just for fun. A lot of project based on Android as well as web app I have developed."
         path="projects"
       />
       <SidebarWrapper>
         <div className="marginTopTitle">
           <h1 className="titleSeparate">Projects</h1>
+          <p>
+            I use my time for developing my skill by creating some project,
+            some of my projects are for commercial,
+            and some are just for fun. A lot of project based on Android
+            as well as web app I have developed.
+          </p>
         </div>
         <Row gutter={[20, 20]}>
           {
             data.allMarkdownRemark && data.allMarkdownRemark.edges.map((val, key) => (
               // eslint-disable-next-line react/no-array-index-key
               <Col key={key} xs={24} sm={24} md={12} lg={8}>
-                <PostCard data={val} />
+                <ProjectCard data={val} />
               </Col>
             ))
           }
