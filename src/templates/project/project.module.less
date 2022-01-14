@@ -1,10 +1,10 @@
 @import (reference) '../../styles/index.less';
 
 .bannerImgContainer {
-
     .bannerImg {
         border-radius: 1.5em;
         border: 2px solid #F5F8F9;
+        height: 420px;
     }
 
     .bannerImg:hover {
@@ -13,7 +13,14 @@
 
     @media only screen and (max-width: 767px) {
         padding: 1rem 0;
+        .bannerImg {
+            height: 220px;
+        }
     }
+}
+
+.tagContainer {
+    margin-bottom: 1rem;
 }
 
 .tagHolder {

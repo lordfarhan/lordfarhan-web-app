@@ -8,12 +8,11 @@ excerpt: Wealthiva is an advanced development of Wealthify since Wealthify was d
 ---
 
 ### Summary
-| <div style="width:180px"></div>                       |                           |
+| <div style="width:120px"></div>                       |                           |
 | --- | --- |
-| Project Name          | Wealthiva Android App|
+| Project Code          | wealthiva-android-app|
 | Date Start            | 01-01-2022|
 | Date End              | TBD|
 | Status                | Ongoing|
-| Url                   | -|
 ### Description
-Wealthiva is an advanced development of Wealthify since Wealthify was discontinued for development. Wealthiva has the same vision as Wealthify which is to help everyone to manage their finances well. Although it has the same vision but this project was developed with a new design by implementing the concept of **gamification** and target user customization. This project uses Firebase as server to provide microservice requirements like authentication, database, etc.
+I'm working for Project Manager and Android Programmer on this project. Wealthiva is an advanced development of Wealthify since Wealthify was discontinued for development. Wealthiva has the same vision as Wealthify which is to help everyone to manage their finances well. Although it has the same vision but this project was developed with a new design by implementing the concept of **gamification** and target user customization. This project uses Firebase as server to provide microservice requirements like authentication, database, etc. This project is still under development so you cannot check the application, as well as the image is not published yet.

@@ -8,12 +8,11 @@ excerpt: Smartiva is the continued development of Smartify since Smartify was di
 ---
 
 ### Summary
-| <div style="width:180px"></div>                       |                           |
+| <div style="width:120px"></div>                       |                           |
 | --- | --- |
-| Project Name          | Smartiva Android App|
+| Project Code          | smartiva-android-app|
 | Date Start            | 01-01-2022|
 | Date End              | TBD|
 | Status                | Ongoing|
-| Url                   | -|
 ### Description
-Smartiva is the continued development of Smartify since Smartify was discontinued for development, this project was developed with a new design by implementing the concept of **gamification** and target user customization. Smartiva is developed using the Kotlin language and the MVVM architecture. Smartiva uses Firebase to handle database and microservice requirements.
+I'm working for Project Manager and Android Programmer on this project. Smartiva is the continued development of Smartify since Smartify was discontinued for development, this project was developed with a new design by implementing the concept of **gamification** and target user customization. Smartiva is developed using the Kotlin language and the MVVM architecture. Smartiva uses Firebase to handle database and microservice requirements. This project is still under development so you cannot check the application, as well as the image is not published yet.

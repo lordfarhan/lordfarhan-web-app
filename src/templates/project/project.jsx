@@ -41,15 +41,17 @@ const Project = ({ data }) => {
               <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
             </div>
             <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
-            {
-              tags.map((val) => (
-                <div className={style.tagHolder}>
-                  {
-                    `#${val}`
-                  }
-                </div>
-              ))
-            }
+            <div className={style.tagContainer}>
+              {
+                tags.map((val) => (
+                  <div className={style.tagHolder}>
+                    {
+                      `#${val}`
+                    }
+                  </div>
+                ))
+              }
+            </div>
             <Comment pageCanonicalUrl={canonicalUrl} pageId={title} />
           </div>
         </SidebarWrapper>

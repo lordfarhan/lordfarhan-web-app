@@ -8,12 +8,11 @@ excerpt: Smartify is an application created for educational institutions in the 
 ---
 
 ### Summary
-| <div style="width:180px"></div>                       |                           |
+| <div style="width:120px"></div>                       |                           |
 | --- | --- |
-| Project Name          | Smartify Web App|
+| Project Code          | smartify-web-app|
 | Date Start            | 01-07-2020|
 | Date End              | 01-01-2021|
-| Date End              | Completed|
-| Url                   | https://www.smartify.codeiva.com|
+| Status                | Completed|
 ### Description
-Smartify is an application created for educational institutions in the context of digitizing learning media. This is a web version of Smartify project. This project uses Laravel as full stack development and MySQL as database server. This project is deployed on Linux server.
+I'm working for Project Manager and Full-stack Programmer on this project as well as Server Administrator based on Linux Server (CentOS). Smartify is an application created for educational institutions in the context of digitizing learning media. This is a web version of Smartify project. This project uses Laravel as full stack development and MySQL as database server. This project is deployed on Linux server. You can check this project live on this url: https://www.smartify.codeiva.com.

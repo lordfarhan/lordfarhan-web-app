@@ -8,14 +8,12 @@ excerpt: Codeiva is a digital business company that provides services by facilit
 ---
 
 ### Summary
-| <div style="width:180px"></div>                       |                           |
+| <div style="width:120px"></div>                       |                           |
 | --- | --- |
-| Project Name          | Codeiva Web App|
-| Date Start            | 01-05-2020|
-| Date End              | Current|
-| Status                | Maintenance|
-| Url                   | https://www.codeiva.com|
+| Project Code          | : codeiva-web-app|
+| Date Start            | : 01-05-2020|
+| Date End              | : Current|
+| Status                | : Maintenance|
 ### Description
-Codeiva is a digital business company that provides services by facilitating the process of designing, developing and maintaining a project or business. 
-This website built as Codeiva profile and also for managing the resources such as projects, clients, posts, etc.
- 
+I'm working for Project Manager and Full-stack Programmer on this project. Codeiva is a digital business company that provides services by facilitating the process of designing, developing and maintaining a project or business. 
+This website built as Codeiva profile and also for managing the resources such as projects, clients, posts, etc. You can check this project live on this url: https://www.codeiva.com.

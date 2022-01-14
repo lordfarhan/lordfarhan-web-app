@@ -8,12 +8,11 @@ excerpt: Wealthify is an application to help people manage their financial. This
 ---
 
 ### Summary
-| <div style="width:180px"></div>                       |                           |
+| <div style="width:120px"></div>                       |                           |
 | --- | --- |
-| Project Name          | Wealthify Android App|
+| Project Code          | wealthify-android-app|
 | Date Start            | 01-04-2021|
 | Date End              | 30-12-2021|
 | Status                | Completed|
-| Url                   | https://play.google.com/store/apps/details?id=com.codeiva.wealthify|
 ### Description
-Wealthify is an application to help people manage their financial. This application is developed with Kotlin and Firebase as a server. This project had been published to Play Store.
+I'm working for Project Manager and Android Programmer on this project. Wealthify is an application to help people manage their financial. This application is developed with Kotlin and Firebase as a server. This project had been published to Play Store. You can try this application from Play Store from here: https://play.google.com/store/apps/details?id=com.codeiva.wealthify.
