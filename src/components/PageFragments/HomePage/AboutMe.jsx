@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import AboutTile from '../../AbouTile';
+import AboutTile from '../../AboutTile';
 import { stripTags, domHtml } from '../../../utils/stripTags';
 
 import SEO from '../../Seo';
@@ -23,7 +23,7 @@ const AboutMe = () => {
           title="About"
           description={description}
           path=""
-          keywords={['Muhammad', 'Farhan', 'Android Developer', 'FullStack Developer', 'Javascript', 'Laravel', 'NodeJS']}
+          keywords={['lordfarhan', 'lord', 'farhan', 'muhammad farhan', 'farhan', 'android', 'fullstack']}
         />
         <h1 className="titleSeparate">About Me</h1>
         <p>{pageText.paragraphOne}</p>
@@ -33,9 +33,9 @@ const AboutMe = () => {
       <Row gutter={[20, 20]}>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="location.png"
+            img="map.png"
             height={60}
-            alt="location image"
+            alt="map image"
             textH4="Born and bought up in"
             textH3="Bojonegoro, Indonesia"
           />
@@ -50,26 +50,26 @@ const AboutMe = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="meeting.png"
-            alt="meeting image"
+            img="handshake.png"
+            alt="handshake image"
             textH4="Socially"
             textH3="Palsy-walsy to anyone"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="motorcycle.png"
-            alt="motorcycle image"
-            textH4="Love Travel"
-            textH3="Although not documented"
+            img="cat.png"
+            alt="cat image"
+            textH4="Cat Lover"
+            textH3="Really love cat!"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="web.png"
-            alt="web image"
-            textH4="Self Taught Programmer"
-            textH3="Thanks to the Web Resources"
+            img="analytics.png"
+            alt="analytics image"
+            textH4="Lifelong Learner"
+            textH3="Self Taught Programmer"
             height={60}
             width={60}
           />

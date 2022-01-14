@@ -77,8 +77,7 @@ const DomContent = () => (
         </li>
       </ul>
       <div className={style.actionButton}>
-        {/* <a href="../cv.pdf" download target="_blank">Download CV</a> */}
-        <a href="/contact">Contact ME</a>
+        <a href="../resume.pdf" download target="_blank">Download CV</a>
       </div>
     </div>
   </aside>
