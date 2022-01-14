@@ -34,6 +34,10 @@ const Tags = ({ data }) => {
         <SidebarWrapper>
           <div className="marginTopTitle">
             <h1 className="titleSeparate">#Tags</h1>
+            <p>
+              This page consists of various technologies that&apos;s used for developing projects.
+              You can check the projects related to the tags by clicking on any of the tags below.
+            </p>
           </div>
           <Row gutter={[20, 20]}>
             {
