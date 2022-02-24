@@ -9,6 +9,7 @@ module.exports = {
   disqusScript: process.env.DISQUS_SCRIPT || 'https://lordfarhan.disqus.com/embed.js',
   pages: {
     home: '/',
+    statistics: 'statistics',
     contact: 'contact',
     projects: 'projects',
     tags: 'tags',

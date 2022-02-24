@@ -33,7 +33,12 @@ export default () => {
           <ul className={style.nav}>
             <li className={style.navItem}>
               <Link to="/" onClick={toggleMenu} activeClassName={style.anchorActive}>
-                Summary
+                Root
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/statistics" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                Stats
               </Link>
             </li>
             <li className={style.navItem}>
