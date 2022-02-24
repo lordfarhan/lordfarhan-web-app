@@ -6,16 +6,57 @@ import { Pie, Bar } from '@ant-design/plots';
 import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import SEO from '../../components/Seo';
-import utils from './statisticUtils';
 
 const pageText = {
   paragraphOne: 'This is some of my statistics. Some of them is written based on my habbits and what I\'ve done and some of them is my plans.',
 };
 
 const Statistics = () => {
+  const timeManagementData = [
+    {
+      type: 'Learn',
+      value: 4,
+    },
+    {
+      type: 'Earn',
+      value: 6,
+    },
+    {
+      type: 'Solopreneur',
+      value: 3,
+    },
+    {
+      type: 'Life',
+      value: 11,
+    },
+  ];
+
+  const timelineData = [
+    {
+      event: 'Play Group',
+      values: [2003, 2006],
+    },
+    {
+      event: 'Elementary School',
+      values: [2006, 2012],
+    },
+    {
+      event: 'Junior High School',
+      values: [2012, 2015],
+    },
+    {
+      event: 'Senior High School',
+      values: [2015, 2018],
+    },
+    {
+      event: 'College',
+      values: [2018, 2022],
+    },
+  ];
+
   const timeManagementConfig = {
     appendPadding: 10,
-    data: utils.timeManagementData(),
+    data: timeManagementData,
     angleField: 'value',
     colorField: 'type',
     radius: 1,
@@ -59,7 +100,7 @@ const Statistics = () => {
       min: 2000,
       tickInterval: 1,
     },
-    data: utils.timelineData(),
+    data: timelineData,
     xField: 'values',
     yField: 'event',
     isRange: true,
