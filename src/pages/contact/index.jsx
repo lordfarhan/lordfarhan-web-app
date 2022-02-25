@@ -1,3 +1,5 @@
+/* eslint-disable import/no-named-as-default-member */
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { Layout, Row, Col } from 'antd';
 import Header from '../../components/PageLayout/Header';

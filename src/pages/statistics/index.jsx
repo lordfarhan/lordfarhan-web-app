@@ -1,3 +1,5 @@
+/* eslint-disable import/no-named-as-default-member */
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable no-restricted-properties */
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
@@ -133,7 +135,7 @@ const Statistics = () => {
             <p>{pageText.paragraphOne}</p>
           </div>
           <Row gutter={[40, 20]} className="mt-4">
-            <Col sm={24} md={24} lg={12}>
+            <Col xs={24} sm={24} md={24} lg={12}>
               <div className="card">
                 <div className="cardHeader">
                   <h3>Time Management</h3>
@@ -143,7 +145,7 @@ const Statistics = () => {
                 </div>
               </div>
             </Col>
-            <Col sm={24} md={24} lg={12}>
+            <Col xs={24} sm={24} md={24} lg={12}>
               <div className="card">
                 <div className="cardHeader">
                   <h3>Daily Schedule</h3>
@@ -151,7 +153,7 @@ const Statistics = () => {
                 <div className="cardBody" />
               </div>
             </Col>
-            <Col sm={24} md={24} lg={24}>
+            <Col xs={24} sm={24} md={24} lg={24}>
               <div className="card">
                 <div className="cardHeader">
                   <h3>Timeline</h3>
