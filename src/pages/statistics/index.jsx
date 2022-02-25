@@ -148,14 +148,6 @@ const Statistics = () => {
             <Col xs={24} sm={24} md={24} lg={12}>
               <div className="card">
                 <div className="cardHeader">
-                  <h3>Daily Schedule</h3>
-                </div>
-                <div className="cardBody" />
-              </div>
-            </Col>
-            <Col xs={24} sm={24} md={24} lg={24}>
-              <div className="card">
-                <div className="cardHeader">
                   <h3>Timeline</h3>
                 </div>
                 <div className="cardBody">
