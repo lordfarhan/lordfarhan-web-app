@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable no-restricted-properties */
@@ -8,28 +9,31 @@ import { Pie, Bar } from '@ant-design/plots';
 import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import SEO from '../../components/Seo';
+import Skills from '../../components/PageFragments/StatisticsPage/SkillProgress';
 
 const pageText = {
-  paragraphOne: 'This is some of my statistics. Some of them is written based on my habbits and what I\'ve done and some of them is my plans.',
+  paragraphOne: 'This is some of my statistics. Please kindly note for the skills section, it is only an estimate from me personally based on what I have learned and applied from projects. Some stats are written based on my experience and habits, others are plans I made.',
 };
 
 const Statistics = () => {
+  const currentYear = new Date().getFullYear();
+
   const timeManagementData = [
     {
       type: 'Learn',
-      value: 4,
+      value: 5,
     },
     {
       type: 'Earn',
-      value: 6,
+      value: 5,
     },
     {
       type: 'Solopreneur',
-      value: 3,
+      value: 5,
     },
     {
       type: 'Life',
-      value: 11,
+      value: 9,
     },
   ];
 
@@ -51,8 +55,20 @@ const Statistics = () => {
       values: [2015, 2018],
     },
     {
-      event: 'College',
+      event: 'Bachelor\'s Degree',
       values: [2018, 2022],
+    },
+    {
+      event: 'Android Developer',
+      values: [2018, currentYear],
+    },
+    {
+      event: 'Laravel Developer',
+      values: [2019, currentYear],
+    },
+    {
+      event: 'NodeJS Developer',
+      values: [2021, currentYear],
     },
   ];
 
@@ -148,12 +164,30 @@ const Statistics = () => {
             <Col xs={24} sm={24} md={24} lg={12}>
               <div className="card">
                 <div className="cardHeader">
-                  <h3>Timeline</h3>
+                  <h3>Daily Schedule</h3>
+                </div>
+                <div className="cardBody">
+                  <Pie {...timeManagementConfig} />
+                </div>
+              </div>
+            </Col>
+            {/* <Col xs={24} sm={24} md={24} lg={24}>
+              <div className="card">
+                <div className="cardHeader">
+                  <h3>
+                    Timeline (2000 -
+                    {' '}
+                    {currentYear}
+                    )
+                  </h3>
                 </div>
                 <div className="cardBody">
                   <Bar {...timelineConfig} />
                 </div>
               </div>
+            </Col> */}
+            <Col xs={24} sm={24} md={24} lg={24}>
+              <Skills />
             </Col>
           </Row>
         </SidebarWrapper>

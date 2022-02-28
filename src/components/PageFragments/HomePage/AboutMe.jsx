@@ -8,10 +8,11 @@ import SEO from '../../Seo';
 const pageText = {
   paragraphOne: `Hello fellas! My name is Muhammad Farhan. I'm an android app developer as well as full stack web developer who is
     passionate about various technologies. I like to experiment with different web
-    technologies. I have an experience of 2 yaears building android app as well as web app 😅.`,
-  paragraphTwo: `Currently I work mostly in android app development using Kotlin and web development using Laravel framework and JavaScript (Node JS, React, Gatsby, etc). 
-    I also have hands on experience working with cloud infrastructures like <b>Google Cloud Platform</b> specially for Firebase. 
-    I'm always a learner and a self taught programmer.`,
+    technologies. I have an experience of 4 years building Android app as well as web app 😅.`,
+  paragraphTwo: `Currently I work mostly in Android app development using Kotlin or Java and web development using Laravel framework and JavaScript (Node JS, React, Gatsby, etc). 
+    I also have hands on experience working with cloud infrastructures like <b>Google Cloud Platform</b> specially for Firebase.`,
+  paragraphThree: `I'm always a learner and a self taught programmer. Besides developing the skills that I have, I also really like to learn new things, 
+    the difficulty in learning new things is a challenge that has its own meaning for me.`,
 };
 
 const AboutMe = () => {
@@ -20,7 +21,7 @@ const AboutMe = () => {
     <>
       <div>
         <SEO
-          title="About"
+          title="Root"
           description={description}
           path=""
           keywords={['lordfarhan', 'lord', 'farhan', 'muhammad farhan', 'farhan', 'android', 'fullstack']}
@@ -28,7 +29,9 @@ const AboutMe = () => {
         <h1 className="titleSeparate">About Me</h1>
         <p>{pageText.paragraphOne}</p>
         <p dangerouslySetInnerHTML={domHtml(pageText.paragraphTwo)} />
+        <p dangerouslySetInnerHTML={domHtml(pageText.paragraphThree)} />
         <h2 className="mt-4">Not Fun Fact 😅</h2>
+        <p>Here are some facts about me, not very interesting but good for me to share.</p>
       </div>
       <Row gutter={[20, 20]}>
         <Col xs={24} sm={24} md={12} lg={8}>
