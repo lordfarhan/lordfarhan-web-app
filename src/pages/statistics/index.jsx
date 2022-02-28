@@ -150,7 +150,7 @@ const Statistics = () => {
             <h1 className="titleSeparate">Statistics</h1>
             <p>{pageText.paragraphOne}</p>
           </div>
-          <Row gutter={[40, 20]} className="mt-4">
+          <Row gutter={[20, 20]} className="mt-4">
             <Col xs={24} sm={24} md={24} lg={12}>
               <div className="card">
                 <div className="cardHeader">
