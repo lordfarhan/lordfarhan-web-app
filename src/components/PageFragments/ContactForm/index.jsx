@@ -41,7 +41,7 @@ export default () => {
           <Input size="default" placeholder="Email" />
         </Form.Item>
         <Form.Item name={['message']} rules={[{ required: true }]}>
-          <Input.TextArea size="default" rows={18} placeholder="Message *" />
+          <Input.TextArea size="default" rows={9} placeholder="Message *" />
         </Form.Item>
         <Form.Item>
           <Button type="primary" shape="round" size="large" htmlType="submit" style={{ background: '#2c87e8' }}>
