@@ -18,10 +18,10 @@ module.exports = {
   },
   social: {
     dribbble: 'https://dribbble.com/lordfarhan',
-    facebook: 'https://www.facebook.com/iamfarhanmuhammad',
+    facebook: 'https://www.facebook.com/lordfarhan.me',
     github: 'https://github.com/lordfarhan',
     gmail: 'mailto:farhan1205muhammad@gmail.com',
-    instagram: 'https://www.instagram.com/farhanalrosyid/',
+    instagram: 'https://www.instagram.com/lordfarhan.me/',
     linkedin: 'https://linkedin.com/in/lordfarhan',
     paypal: 'https://paypal.me/lordfarhan',
     rss: '/rss.xml',
